@@ -1,0 +1,355 @@
+/* =========================================
+   EXPERIENCE SECTION
+========================================= */
+
+.experience-section {
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #ffffff;
+
+  color: #111322;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.experience-container {
+  width: 90%;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+  margin-bottom: 45px;
+}
+
+.section-heading > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #7042f5;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #111322;
+
+  font-size: 32px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.heading-line {
+  width: 32px;
+
+  height: 3px;
+
+  margin-top: 14px;
+
+  border-radius: 5px;
+
+  background: #7042f5;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.experience-timeline {
+  position: relative;
+
+  padding-left: 55px;
+}
+
+
+/* VERTICAL LINE */
+
+.experience-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 10px;
+  bottom: 10px;
+
+  left: 10px;
+
+  width: 2px;
+
+  background: #ddd8ff;
+}
+
+
+/* =========================================
+   EXPERIENCE ITEM
+========================================= */
+
+.experience-item {
+  position: relative;
+
+  margin-bottom: 28px;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   TIMELINE DOT
+========================================= */
+
+.timeline-dot {
+  position: absolute;
+
+  left: -51px;
+
+  top: 30px;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #7042f5;
+
+  border: 4px solid #ffffff;
+
+  box-shadow:
+    0 0 0 2px #7042f5;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   EXPERIENCE CARD
+========================================= */
+
+.experience-card {
+  display: flex;
+
+  gap: 20px;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #ececf2;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 8px 30px rgba(18, 18, 35, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #ddd5ff;
+
+  box-shadow:
+    0 15px 35px rgba(18, 18, 35, 0.09);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.experience-icon {
+  flex-shrink: 0;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #7042f5;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  box-shadow:
+    0 8px 20px rgba(112, 66, 245, 0.25);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.experience-content {
+  flex: 1;
+}
+
+.experience-top {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.experience-top h3 {
+  margin: 0;
+
+  color: #111322;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.experience-top span {
+  flex-shrink: 0;
+
+  color: #7042f5;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.experience-content h4 {
+  margin: 7px 0 8px;
+
+  color: #343747;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.experience-content p {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #626575;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .experience-section {
+    padding: 80px 0;
+  }
+
+  .experience-container {
+    width: 90%;
+  }
+
+  .experience-top {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .experience-section {
+    padding: 70px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .experience-timeline {
+    padding-left: 35px;
+  }
+
+  .experience-timeline::before {
+    left: 6px;
+  }
+
+  .timeline-dot {
+    left: -35px;
+
+    top: 25px;
+
+    width: 10px;
+    height: 10px;
+  }
+
+  .experience-card {
+    padding: 18px;
+
+    gap: 14px;
+  }
+
+  .experience-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 16px;
+  }
+
+  .experience-top h3 {
+    font-size: 14px;
+  }
+
+  .experience-top span {
+    font-size: 11px;
+  }
+
+  .experience-content h4 {
+    font-size: 12px;
+  }
+
+  .experience-content p {
+    font-size: 12px;
+  }
+
+}

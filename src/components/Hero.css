@@ -1,0 +1,795 @@
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+  position: relative;
+  min-height: 650px;
+
+  background:
+    radial-gradient(
+      circle at 75% 45%,
+      rgba(105, 55, 255, 0.18),
+      transparent 30%
+    ),
+    #050816;
+
+  color: #ffffff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.hero-container {
+  width: 92%;
+  max-width: 1450px;
+
+  min-height: 650px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.hero-content {
+  padding-top: 70px;
+}
+
+
+.hello-badge {
+  display: inline-block;
+
+  padding: 7px 15px;
+
+  border-radius: 20px;
+
+  background: rgba(116, 71, 255, 0.25);
+
+  border: 1px solid rgba(116, 71, 255, 0.25);
+
+  color: #ddd2ff;
+
+  font-size: 13px;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(55px, 6vw, 85px);
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+}
+
+
+.hero h1 span {
+  color: #7546ff;
+}
+
+
+.hero h2 {
+  margin: 18px 0 12px;
+
+  font-size: 27px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-description {
+  max-width: 580px;
+
+  margin: 0;
+
+  color: #c1c4d0;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   HERO TAGS
+========================================================= */
+
+.hero-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+  color: #e1e1e7;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+
+.hire-btn,
+.work-btn {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 13px 23px;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* Hire button */
+
+.hire-btn {
+  background: #7042f5;
+
+  color: #ffffff;
+
+  border: 1px solid #7042f5;
+}
+
+
+.hire-btn:hover {
+  background: #8158ff;
+
+  border-color: #8158ff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(112, 66, 245, 0.3);
+}
+
+
+/* View work button */
+
+.work-btn {
+  background: transparent;
+
+  border: 1px solid #77798a;
+
+  color: #ffffff;
+}
+
+
+.work-btn:hover {
+  border-color: #7042f5;
+
+  color: #b39aff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.connect-text {
+  margin-top: 40px;
+
+  color: #999dab;
+
+  font-size: 13px;
+}
+
+
+.social-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 12px;
+}
+
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #171b2b;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.social-links a:hover {
+  background: #7042f5;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   RIGHT SIDE / HERO VISUAL
+========================================================= */
+
+.hero-visual {
+  position: relative;
+
+  width: 100%;
+
+  height: 600px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   PURPLE GLOW
+========================================================= */
+
+.purple-glow {
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(117, 65, 255, 0.5),
+      rgba(117, 65, 255, 0.15) 50%,
+      rgba(117, 65, 255, 0.05) 65%,
+      transparent 72%
+    );
+
+  filter: blur(2px);
+}
+
+
+/* =========================================================
+   PURPLE CIRCLE BEHIND PROFILE
+========================================================= */
+
+.profile-circle {
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: rgba(109, 53, 255, 0.18);
+
+  border: 1px solid rgba(133, 99, 255, 0.15);
+
+  box-shadow:
+    0 0 100px rgba(111, 61, 255, 0.35);
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.profile-image {
+  position: relative;
+
+  z-index: 3;
+
+  width: 470px;
+  height: 560px;
+
+  object-fit: contain;
+
+  object-position: bottom;
+
+  filter:
+    drop-shadow(
+      0 25px 35px rgba(0, 0, 0, 0.45)
+    );
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+
+/* Small hover movement */
+
+.profile-image:hover {
+  transform: translateY(-5px);
+
+  filter:
+    drop-shadow(
+      0 30px 45px rgba(112, 66, 245, 0.25)
+    );
+}
+
+
+/* =========================================================
+   TECHNOLOGY ICONS
+========================================================= */
+
+.tech-icon {
+  position: absolute;
+
+  z-index: 5;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(14, 18, 36, 0.92);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-size: 32px;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.35);
+
+  animation:
+    float 4s ease-in-out infinite;
+}
+
+
+/* React */
+
+.react-icon {
+  top: 180px;
+
+  left: 15%;
+
+  color: #61dafb;
+}
+
+
+/* Python */
+
+.python-icon {
+  top: 220px;
+
+  right: 12%;
+
+  color: #ffd43b;
+
+  animation-delay: 0.7s;
+}
+
+
+/* JavaScript */
+
+.javascript-icon {
+  bottom: 180px;
+
+  left: 12%;
+
+  color: #f7df1e;
+
+  animation-delay: 1.2s;
+}
+
+
+/* Tailwind */
+
+.tailwind-icon {
+  bottom: 110px;
+
+  right: 18%;
+
+  color: #38bdf8;
+
+  animation-delay: 1.8s;
+}
+
+
+/* =========================================================
+   FLOATING ANIMATION
+========================================================= */
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .hero-container {
+    width: 94%;
+  }
+
+  .hero h1 {
+    font-size: 68px;
+  }
+
+  .profile-image {
+    width: 430px;
+    height: 520px;
+  }
+
+  .profile-circle,
+  .purple-glow {
+    width: 390px;
+    height: 390px;
+  }
+
+  .react-icon {
+    left: 5%;
+  }
+
+  .python-icon {
+    right: 5%;
+  }
+
+  .javascript-icon {
+    left: 5%;
+  }
+
+  .tailwind-icon {
+    right: 8%;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .hero {
+    min-height: auto;
+
+    padding-bottom: 40px;
+  }
+
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    text-align: center;
+  }
+
+
+  .hero-content {
+    padding-top: 120px;
+  }
+
+
+  .hero-description {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+
+  .hero-tags {
+    justify-content: center;
+  }
+
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+
+  .social-links {
+    justify-content: center;
+  }
+
+
+  .hero-visual {
+    height: 550px;
+
+    margin-top: 10px;
+  }
+
+
+  .profile-image {
+    width: 430px;
+
+    height: 520px;
+  }
+
+
+  .profile-circle,
+  .purple-glow {
+    width: 400px;
+
+    height: 400px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: auto;
+
+    padding-bottom: 30px;
+  }
+
+
+  .hero-container {
+    width: 92%;
+  }
+
+
+  .hero-content {
+    padding-top: 110px;
+  }
+
+
+  .hello-badge {
+    font-size: 12px;
+
+    padding: 6px 13px;
+  }
+
+
+  .hero h1 {
+    font-size: 48px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .hero h2 {
+    margin-top: 15px;
+
+    font-size: 22px;
+  }
+
+
+  .hero-description {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+
+  .hero-tags {
+    gap: 6px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 10px;
+  }
+
+
+  .hire-btn,
+  .work-btn {
+    width: 100%;
+
+    max-width: 260px;
+
+    margin: 0 auto;
+
+    padding: 12px 20px;
+  }
+
+
+  .connect-text {
+    margin-top: 30px;
+  }
+
+
+  .hero-visual {
+    height: 450px;
+
+    margin-top: 20px;
+  }
+
+
+  .profile-image {
+    width: 320px;
+
+    height: 410px;
+  }
+
+
+  .profile-circle,
+  .purple-glow {
+    width: 310px;
+
+    height: 310px;
+  }
+
+
+  .tech-icon {
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+  }
+
+
+  .react-icon {
+    top: 110px;
+
+    left: 2%;
+  }
+
+
+  .python-icon {
+    top: 140px;
+
+    right: 2%;
+  }
+
+
+  .javascript-icon {
+    bottom: 120px;
+
+    left: 3%;
+  }
+
+
+  .tailwind-icon {
+    bottom: 80px;
+
+    right: 5%;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+
+  .profile-image {
+    width: 290px;
+
+    height: 380px;
+  }
+
+
+  .profile-circle,
+  .purple-glow {
+    width: 280px;
+
+    height: 280px;
+  }
+
+
+  .tech-icon {
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 19px;
+  }
+}

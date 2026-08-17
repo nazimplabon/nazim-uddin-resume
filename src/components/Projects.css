@@ -1,0 +1,349 @@
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.projects-section {
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #f8f9fc;
+
+  color: #111322;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.projects-container {
+  width: 90%;
+
+  max-width: 1300px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.projects-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 42px;
+}
+
+.projects-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #7144f5;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.projects-header h2 {
+  margin: 0;
+
+  color: #111322;
+
+  font-size: 36px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.projects-line {
+  width: 34px;
+
+  height: 3px;
+
+  margin-top: 12px;
+
+  background: #7144f5;
+
+  border-radius: 5px;
+}
+
+.projects-header > p {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #656a78;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.project-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeF3;
+
+  border-radius: 11px;
+
+  box-shadow:
+    0 8px 30px rgba(25, 30, 50, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #ded5ff;
+
+  box-shadow:
+    0 18px 45px rgba(112, 66, 245, 0.11);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.project-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 205px;
+
+  overflow: hidden;
+
+  background: #e9eaf0;
+}
+
+.project-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.project-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(5, 8, 22, 0.65);
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-view {
+  padding: 10px 17px;
+
+  border-radius: 6px;
+
+  background: #7144f5;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transform: translateY(8px);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.project-card:hover .project-view {
+  transform: translateY(0);
+}
+
+.project-view:hover {
+  background: #8158ff;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.project-content {
+  padding: 22px;
+}
+
+.project-category {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #7144f5;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.4px;
+}
+
+.project-content h3 {
+  margin: 0 0 10px;
+
+  color: #171a29;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.project-content > p {
+  min-height: 63px;
+
+  margin: 0 0 17px;
+
+  color: #656a78;
+
+  font-size: 11px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   TECHNOLOGIES
+========================================= */
+
+.project-technologies {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+.project-technologies span {
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  background: #f2efff;
+
+  color: #6740d8;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .projects-section {
+    padding: 75px 0;
+  }
+
+  .projects-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .projects-header h2 {
+    font-size: 30px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+}
